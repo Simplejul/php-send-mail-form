@@ -1,5 +1,9 @@
 ### php-send-mail-form
 
+[Lien github](https://github.com/Simplejul/php-send-mail-form)
+[Lien heroku](https://git.heroku.com/php-sendmail.git)
+
+
 Just a simple HTML form:
 
    * an input email
