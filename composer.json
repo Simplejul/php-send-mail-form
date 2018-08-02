@@ -1,0 +1,10 @@
+{
+    "name": "julien/php-send-mail-form",
+    "authors": [
+        {
+            "name": "Simplejul",
+            "email": "simplejul@protonmail.com"
+        }
+    ],
+    "require": {}
+}
