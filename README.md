@@ -1,7 +1,7 @@
 ### php-send-mail-form
 
 
-[Lien heroku](https://git.heroku.com/php-sendmail.git)
+[Lien heroku](https://php-sendmail.herokuapp.com/)
 
 
 Just a simple HTML form:
