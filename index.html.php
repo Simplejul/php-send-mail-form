@@ -26,10 +26,12 @@
             <input type="submit" value="Send">
         </div>
     </form>
+
+
     <?php
 
         function sendmail ($msg,$mail){
-            if (!$msg || !$mail){
+            if (!$_POST['msg'] || !$_POST['email']){
                 throw new Exception('Champ(s) manquant(s):: ');
             }
             $subject = 'no subject';
@@ -39,17 +41,18 @@
             mail($mail, $subject, $msg, $headers);
         }
 
-        try{
-            echo sendmail("hello jo!","geoffrey.frioli@gmail.com"), '<br>'; 
-            echo sendmail(54,"geoffrey.frioli@gmail.com"), '<br>';
-            echo sendmail("Hi G-I Jo!","geoffrey.frioli@gmail.com"), '<br>';
-        }
+        
+        // try{
+        //     echo sendmail("hello jo!","geoffrey.frioli@gmail.com"), '<br>'; 
+        //     echo sendmail(54,"geoffrey.frioli@gmail.com"), '<br>';
+        //     echo sendmail("Hi G-I Jo!","geoffrey.frioli@gmail.com"), '<br>';
+        // }
 
-        catch (Exception $e){
-            echo 'Need message:', $e->getMessage();
-        }
-        echo 'fin de script';
-        //sendmail($_POST['msg'],$_POST['email']);
+        // catch (Exception $e){
+        //     echo 'Need message:', $e->getMessage();
+        // }
+        // echo 'fin de script';
+        sendmail($_POST['msg'],$_POST['email']);
     ?>
 </body>
 </html>
